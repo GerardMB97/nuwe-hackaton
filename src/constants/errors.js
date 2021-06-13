@@ -6,6 +6,7 @@ export default {
   addressError: 'Introduzca una dirección válida',
   countryError: 'Introduzca un país válido',
   cardError: 'Debe contener 16 dígitos',
-  secretError: 'Debe contener 3 dígitos'
+  secretError: 'Debe contener 3 dígitos',
+  checkBoxError: 'Debe aceptar los terminos y condiciones de uso para continuar'
 
 };

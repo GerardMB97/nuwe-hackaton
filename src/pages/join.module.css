@@ -9,3 +9,9 @@
   color: green;
   font-weight: 600;
 }
+
+@media (max-width: 600px) {
+  .login {
+    position: unset;
+  }
+}

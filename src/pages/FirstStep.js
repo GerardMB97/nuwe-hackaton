@@ -31,7 +31,9 @@ export default function FirstStep() {
   const [passwordInput, setPasswordInput] = useState('');
   const [isChecked, setIsChecked] = useState(false);
 
-  const { nameError, emailError, passwordError } = errors;
+  const {
+    nameError, emailError, passwordError, checkBoxError
+  } = errors;
 
   const areAllValid = nameValidator(nameInput)
   && emailValidator(emailInput)
@@ -68,6 +70,7 @@ export default function FirstStep() {
       />
       <input onClick={() => setIsChecked(!isChecked)} className={styles.margin__bot} id="terms" type="checkbox" />
       <label htmlFor="terms">Acepto los términos y condiciones</label>
+      {!isChecked && <p className={styles.error}>{checkBoxError}</p>}
       <Link to="step2" className={areAllValid ? styles.link : styles.disabled}><NextStepButton text="Registrar cuenta" /></Link>
       <button className={styles['google-button']} type="button">
         <img src={googleIcon} alt="google icon" className={styles['google-icon']} />
