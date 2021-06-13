@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { func, string } from 'prop-types';
 import React, { useEffect, useState } from 'react';
+import check from '../assets/img/check.png';
 import * as styles from './input.module.css';
 
 export default function Input({
@@ -34,6 +35,7 @@ export default function Input({
         placeholder={placeholder}
         onChange={(e) => setState(e.target.value)}
       />
+      {className === styles.right && <img className={styles.check} alt="check" src={check} />}
       {className === styles.wrong && <p className={styles.error}>{error}</p>}
     </div>
   );
