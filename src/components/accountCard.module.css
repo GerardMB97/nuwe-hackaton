@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+.card__selected {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(200, 232, 238, 0.3);
+  border: 1px solid green;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.account-type {
+  padding: 0px;
+  margin: 0.8rem 0rem 0.5rem 1rem;
+}
+
+.info-text {
+  color: rgb(143, 143, 143);
+  font-size: 0.8rem;
+  padding: 0px;
+  margin: 0rem 1rem 1rem 1rem;
+  width: 70%;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-right: 1.5rem;
+  color: green;
+}
+.link {
+  all: unset;
+  color: black;
+  cursor: pointer;
+}

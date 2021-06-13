@@ -1,0 +1,11 @@
+.link {
+  all: unset;
+  cursor: pointer;
+  color: white;
+}
+
+.disabled {
+  all: unset;
+  pointer-events: none;
+  color: white;
+}

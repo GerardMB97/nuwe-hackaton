@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --dark-gray: rgb(143, 143, 143);
+  --gray: rgb(167, 175, 167);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  width: 100%;
+  padding: 0 5rem;
+  color: var(--dark-gray);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  color: var(--dark-gray);
+}
+
+.position__absolute {
+  position: absolute;
+  font-size: 20px;
+  left: -1.5rem;
+}
+
+.page-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.font__lighter {
+  color: var(--gray);
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}

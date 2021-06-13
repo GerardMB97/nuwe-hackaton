@@ -1,0 +1,6 @@
+.width {
+  all: unset;
+  margin-top: 2rem;
+  cursor: pointer;
+  width: 100%;
+}

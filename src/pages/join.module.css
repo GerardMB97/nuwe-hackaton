@@ -1,0 +1,11 @@
+.login {
+  color: rgb(150, 148, 148);
+  position: absolute;
+  top: 8%;
+  left: 75%;
+}
+
+.login__green {
+  color: green;
+  font-weight: 600;
+}
