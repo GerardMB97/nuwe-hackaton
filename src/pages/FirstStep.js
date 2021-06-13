@@ -11,7 +11,7 @@ import googleIcon from '../assets/img/google.png';
 import * as styles from './firstStep.module.css';
 
 const nameValidator = (nameInput) => {
-  const RegExpression = /^[a-zA-Z\s]*$/;
+  const RegExpression = /^[a-zA-Z\s\u00f1\u00d1]*$/;
   return nameInput.length > 3 && RegExpression.test(nameInput);
 };
 const emailValidator = (emailInput) => {
@@ -20,7 +20,7 @@ const emailValidator = (emailInput) => {
 };
 
 const passwordValidator = (pwdInput) => {
-  const RegExpression = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+  const RegExpression = /^(?=.*[A-Za-z\u00f1\u00d1])(?=.*\d)[A-Za-z\d\u00f1\u00d1]{8,}$/;
   return RegExpression.test(pwdInput);
 };
 

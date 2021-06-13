@@ -14,12 +14,12 @@ const phoneValidator = (phoneInput) => {
 };
 
 const countryValidator = (countryInput) => {
-  const regEx = /^[a-zA-Z\s]*$/;
+  const regEx = /^[a-zA-Z\s\u00f1\u00d1]*$/;
   return regEx.test(countryInput);
 };
 
 const addressValidator = (addressInput) => {
-  const regEx = /[\w',-\\/.\s]/;
+  const regEx = /[\w',-\\/.\s\u00f1\u00d1]/;
   return regEx.test(addressInput);
 };
 
